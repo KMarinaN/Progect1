@@ -1,0 +1,57 @@
+.menu-link{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: ;
+    color:#22B4BE;
+    color:#FF4242;
+    color:#FFFFFF;
+    background-color:#191919;
+    text-decoration: none;
+    font-family: "", Inter, sans-serif;
+}
+header {
+    background-color: #191919;
+    color:#22B4BE;
+    color:#FF4242;
+    color:#FFFFFF;
+}
+.main {
+    padding: 20px;
+    background-image: url("image_watcefon.jpg");
+    background-image: url("");
+    
+}
+
+.footer {
+    background-image: url("F:\Progect\images\image_watch.jpg");
+    color:white;
+    text-align: top right;
+    text-align: bottom left;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url("../fonts/Inter_18pt-Regular.ttf") format('ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url("../fonts/Inter_24pt-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url("../fonts/Inter_18pt-Regular.ttf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}@font-face {
+    font-family:"Inter" ;
+    src: url("../fonts/Inter_24pt-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
