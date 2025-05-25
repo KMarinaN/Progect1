@@ -1,57 +1,627 @@
-.menu-link{
-    font-weight: 500;
-    font-size: 48px;
-    line-height: ;
-    color:#22B4BE;
-    color:#FF4242;
-    color:#FFFFFF;
-    background-color:#191919;
-    text-decoration: none;
-    font-family: "", Inter, sans-serif;
-}
-header {
-    background-color: #191919;
-    color:#22B4BE;
-    color:#FF4242;
-    color:#FFFFFF;
-}
-.main {
-    padding: 20px;
-    background-image: url("image_watcefon.jpg");
-    background-image: url("");
-    
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.footer {
-    background-image: url("F:\Progect\images\image_watch.jpg");
-    color:white;
-    text-align: top right;
-    text-align: bottom left;
+header {
+    background-color: #181818;
+    padding: 0 36px;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
+
+.logo {
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    letter-spacing: 1px;
+    margin-right: 24px;
+}
+
+.logo span {
+    color: #22b4be;
+    margin-left: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #181818;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    position: relative;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background: #222;
+    color: #22b4be;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 18px;
+    filter: brightness(0) saturate(100%) invert(63%) sepia(50%) saturate(1000%) hue-rotate(160deg) brightness(90%) contrast(90%);
+}
+
+nav .icons img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+nav .icons img:hover {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0) 100%);
+    background: url('../images/image_watcesfon.jpg') center/cover no-repeat;
+    min-height: 80vw;
+    max-height: 90vh;
+    background-size: 60% auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 120px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 90vw;
+    background-color: #000;
+    background:
+        linear-gradient(to top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 25%),
+        url('../images/image_watcesfon.jpg') center/cover no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(to top, black, transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero article {
+    z-index: 2;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.hero h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 0 0 18px 0;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    max-width: 600px;
+}
+
+.hero p {
+    font-size: 1.08rem;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+    line-height: 1.5;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-zone {
+    padding-top: 40px;
+}
+
+.text-zone p {
+    padding-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.hero-buttons .btn {
+    padding: 12px 32px;
+    font-size: 1.08rem;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hero-buttons .btn-primary {
+    background: #FFFFFF;
+    color: #000;
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #22b4be;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: #22b4be;
+    border-color: #22b4be;
+    color: #FFFFFF;
+}
+
+/* Supported Brand */
+.supported-brand {
+    margin: 48px 0 24px 0;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.supported-brand h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-logos {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.brand-logos img {
+    height: 32px;
+    user-select: none;
+    opacity: 0.7;
+    filter: grayscale(1);
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+.brand-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+/* New Collection */
+.new-collection h2 {
+    max-width: 1200px;
+    margin: 0 auto 48px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    align-items: flex-start;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.new-col-container {
+    display: flex;
+}
+
+.collection-header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-filters {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.collection-filters p {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    width: auto;
+    padding: 5px 10px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.watch-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.watches-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.watches-item:hover {
+    transform: translateY(-10px);
+}
+
+.watches-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.watches-item:hover img {
+    transform: scale(1.05);
+}
+
+.watches-item h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background: #181818;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.footer section {
+    background: url('../images/watch.jpg') center/cover no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 340px;
+    padding: 36px;
+    position: relative;
+}
+
+.p-one,
+.p-two {
+    position: absolute;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.p-one {
+    top: 0;
+    right: 0;
+}
+
+.p-two {
+    bottom: 0;
+    left: 0;
+}
+
+/* Модальное окно */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container {
+    background-color: #181818;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: #22b4be;
+}
+
+.modal-content h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #22b4be;
+}
+
+.btn-register {
+    background-color: #22b4be;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-register:hover {
+    background-color: #1a9ba4;
+}
+
+.login-link {
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #22b4be;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-link a:hover {
+    color: #1a9ba4;
+}
+
 @font-face {
-    font-family:"Inter" ;
+    font-family: "Inter";
     src: url("../fonts/Inter_18pt-Regular.ttf") format('ttf');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family:"Inter" ;
+    font-family: "Inter";
     src: url("../fonts/Inter_24pt-Bold.ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family:"Inter" ;
-    src: url("../fonts/Inter_18pt-Regular.ttf");
-    font-weight: 100;
+    font-family: "Inter";
+    src: url("../fonts/Inter_18pt-Light.ttf");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
-}@font-face {
-    font-family:"Inter" ;
-    src: url("../fonts/Inter_24pt-Bold.ttf");
-    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter_18pt-Medium.ttf") format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 0 15px;
+        height: 50px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .menu-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+        max-width: 95vw;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .brand-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .brand-logos img {
+        height: 24px;
+    }
+
+    .collection-filters {
+        padding: 10px 0;
+    }
+
+    .watch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .footer section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .p-one,
+    .p-two {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .modal-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+    }
 }

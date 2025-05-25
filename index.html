@@ -8,77 +8,129 @@
 </head>
 <body>
     <header class="header">
-        <nav class = "nav-menu">
-            <div class="logo">Time Zone</div>
+        <nav class="nav-menu">
+            <button class="mobile-menu-btn">☰</button>
+            <div class="logo">
+                <img src="images/TimeZone.svg" alt="Timezone Logo">
+            </div>
             <ul class="nav-links">
-                <img src="images/TimeZone.svg" alt="Кнопка" width="246" height="57">
-                <a class="menu-link" href="">Home</a>
-                <a class="menu-link" href="">Shop</a>
-                <a class="menu-link" href="">About</a>
-                <a class="menu-link" href="">Blog</a>
-                <a class="menu-link" href="">Contact</a>
-                <img src="images/search-01.svg" alt="Поиск" width="37" height="37">
-                <img src="images/user-circle.svg" alt="Пользователь" width="49" height="49">
-                <img src="images/shopping-cart-01.svg" alt="Корзина" width="49" height="49">
+                <li><a class="menu-link" href="">Home</a></li>
+                <li><a class="menu-link" href="">Shop</a></li>
+                <li><a class="menu-link" href="">About</a></li>
+                <li><a class="menu-link" href="">Blog</a></li>
+                <li><a class="menu-link" href="">Contact</a></li>
             </ul>
+            <div class="icons">
+                <img src="images/search-01.svg" alt="Search" width="22" height="22">
+                <img class="user-auth" src="images/user-circle.svg" alt="User" width="22" height="22">
+                <img src="images/shopping-cart-01.svg" alt="Cart" width="22" height="22">
+            </div>
         </nav> 
     </header> 
-    <main class="main" >
-        <section>
-            <article>
+    
+    <main class="main">
+        <section class="hero">
+            <article class="text-zone">
                 <h2>Discover Timeless Elegance with Timezone</h2>
                 <p>We believe that every second counts. Our carefully curated collection of luxury and everyday timepieces offers more than just a way to keep time — they reflect your style, precision, and craftsmanship.</p>
-                <img src="image_watchesfon.jpg" alt="" width="" height="">
-                <img src="logo_SHOP NOW.svg" alt="" width="" height="">
-                <img src="new_colection.svg" alt="" width="" height="">
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Shop now</a>
+                    <a href="#" class="btn btn-secondary">New collections</a>
+                </div>
             </article>
         </section>
-        <section class="SUPPORTED-BRAND">
+        
+        <section class="supported-brand">
             <h2>SUPPORTED BRAND</h2>
             <div class="brand-logos">
-                <img scr="logo_SUPPORTED BRAND.svg" alt="Hubolt" >
-                <img scr="logo_hublot.svg" alt="Patek Philippe">
-                <img scr="logo_patek.svg" alt="Rolex">
-                <img scr="logo_rolex.svg" alt="Audemars Piguet">
-                <img scr="logo_ap.svg" alt="Omega">
-                <img scr="logo_omega.svg" alt="Tag Heuer">
+                <img src="images/logo-hublot.svg" alt="Hubolt">
+                <img src="images/logo-patek.svg" alt="Patek Philippe">
+                <img src="images/logo-rolex.svg" alt="Rolex">
+                <img src="images/logo-ap.svg" alt="Audemars Piguet">
+                <img src="images/logo-omega.svg" alt="Omega">
             </div>
         </section>
+        
         <section class="new-collection">
-            <h2>New collection</h2>
-            <div class="watch-grid">
-                <div class="watches-item">
-                    <img scr="png.audermarspiguet" alt="Audermas Piguet">
-                    <h3>Audermas Piguet</h3>
+            <div class="collection-header">
+                <h2>New <br> collection</h2>
+                <img src="images/strelky.svg" alt="Arrows">
+            </div>
+            <div class="new-col-container">
+                <div class="collection-filters">
+                    <p>All</p>
+                    <p>Rolex</p>
+                    <p>Patek Philippe</p>
+                    <p>Audemars Piguet</p>
+                    <p>Vacheron Constantin</p>
+                    <p>Jaeger-LeCoultre</p>
+                    <p>Omega</p>
                 </div>
-                <div class="watches-item">
-                    <img scr="png_omega.png" alt="Omega">
-                    <h3>Omega</h3>
-                </div>
-                <div class="watches-item">
-                    <img scr="png_Rolex.png" alt="Rolex">
-                    <h3>Rolex</h3>
-                </div>
-                <div class="watches-item">
-                    <img scr="PNG_tagheuer.png" alt="Tag Heuer">
-                    <h3>Tag Heuer</h3>
+                <div class="watch-grid">
+                    <div class="watches-item">
+                        <img src="images/audermarspiguet.png" alt="Audermas Piguet">
+                        <h3>Audermas Piguet</h3>
+                    </div>
+                    <div class="watches-item">
+                        <img src="images/omega.png" alt="Omega">
+                        <h3>Omega</h3>
+                    </div>
+                    <div class="watches-item">
+                        <img src="images/Rolex.png" alt="Rolex">
+                        <h3>Rolex</h3>
+                    </div>
+                    <div class="watches-item">
+                        <img src="images/Tagheuer.png" alt="Tag Heuer">
+                        <h3>Tag Heuer</h3>
+                    </div>
                 </div>
             </div>
-            <p>All</p>
-            <p>Rolex</p>
-            <p>Patek Philippe</p>
-            <p>Audemars Piguet</p>
-            <p>Vacheron Constantin</p>
-            <p>Jaeger-LeCoultre</p>
-            <p>Omega</p>
+            <div class="circle-above-footer">
+                <img src="images/circle.svg" alt="Circle">
+            </div>
         </section>
     </main>
-    <footer>
-            <section>
+    
+    <footer class="footer">
+        <section class="foot">
+            <p class="p-one">Own a piece of history with our limited-edition watches, crafted in small quantities and featuring rare materials.</p>
+            <div class="p-two">
                 <h2>Limited Edition</h2>
-                <p>Discover the charm of vintage watches or invest in pre-owned timepieces that stand the test of time.</p>
-                <p>Own a piece of history with our limited-edition watches, crafted in small quantities and featuring rare materials.</p>
-            </section>
+                <p>Discover the charm of vintage watches or invest in pre-owned timepieces that stand the test of time</p>
+            </div>
+        </section>
     </footer>
+    
+    <!-- Модальное окно регистрации -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <button class="close-modal">&times;</button>
+            <div class="modal-content">
+                <h2>Create Account</h2>
+                <form class="register-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="btn-register">Register</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
